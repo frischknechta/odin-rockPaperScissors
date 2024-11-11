@@ -4,8 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
+    <script
+      src="https://kit.fontawesome.com/aed855f57f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <div class="container">
+      <div class="topPart">
+        <h1 class="rounds">Round 1</h1>
+        <div class="scores">
+          <div>Your score : <span class="hScore">0</span></div>
+          <div>Computer score : <span class="cScore">0</span></div>
+        </div>
+        <div class="buttons">
+          <label for="rock">
+            <i class="fa-regular fa-hand-back-fist" value="rock"></i>
+            <button value="rock" id="rock">Rock</button></label
+          >
+
+          <label for="paper">
+            <i class="fa-regular fa-hand"></i>
+            <button value="paper" id="paper">Paper</button></label
+          >
+
+          <label for="scissors">
+            <i class="fa-regular fa-hand-scissors"></i>
+            <button value="scissors" id="scissors">Scissors</button></label
+          >
+        </div>
+      </div>
+      <div class="bottomPart">
+        <div class="result"></div>
+        <div class="winner"></div>
+      </div>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
